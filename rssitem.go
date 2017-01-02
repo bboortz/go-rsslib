@@ -15,3 +15,7 @@ type RssItem struct {
 }
 
 type RssItems []RssItem
+
+func (s RssItems) Len() int64 {
+	return int64(len(s))
+}
