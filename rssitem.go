@@ -17,11 +17,9 @@ type RssItem struct {
 
 type RssItems []RssItem
 
-/*
 func (s RssItems) Len() uint64 {
 	return uint64(len(s))
 }
-*/
 
 func (s1 RssItem) CompareAllFields(s2 RssItem) bool {
 	if !s1.Compare(s2) {
